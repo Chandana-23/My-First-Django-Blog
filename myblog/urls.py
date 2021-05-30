@@ -18,6 +18,8 @@ from django.contrib import admin
 
 from django.contrib.auth import views
 
+admin.autodiscover()
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/login/', views.LoginView.as_view(), name='login'),
@@ -26,3 +28,4 @@ urlpatterns = [
     path('members/',include('django.contrib.auth.urls')),
     path('members/',include('members.urls')),
 ]
+

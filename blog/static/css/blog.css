@@ -3,6 +3,11 @@
     margin-top: 0;
     margin-bottom: 40px;
     padding: 20px 20px 20px 40px;
+    height: 150px;
+}
+
+.page-header a{
+    text-decoration: none;
 }
 
 .page-header h1,
@@ -17,7 +22,7 @@
 h1,
 h2,
 h3,
-h4 {
+h4,h5 {
     font-family: 'Times New Roman', cursive;
 }
 
@@ -48,9 +53,9 @@ h4 {
 .post{
     margin-bottom: 70px;
     box-shadow: 3px 5px 3px 0px gray;
+    padding: 20px;
   }
   
-
 
 .post h2 a,
 .post h2 a:visited {
@@ -76,3 +81,4 @@ h4 {
 .comment {
     margin: 20px 0px 20px 20px;
 }
+

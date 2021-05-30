@@ -13,11 +13,13 @@
         <article class="post">
             <aside class="actions">
                 {% if user.is_authenticated %}
-                <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
-                    <i class="fa fa-edit"></i>
-                </a>
-                <a class="btn btn-default" href="{% url 'add_comment_to_post' pk=post.pk %}">Add comment</a>
-                <a class="btn btn-default" href="{% url 'post_remove' pk=post.pk %}"><i class="fa fa-trash" style="font-size:1em;"></i></a>
+                    {% if user.pk == post.author.pk %}
+                        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+                            <i class="fa fa-edit"></i>
+                        </a>
+                        <a class="btn btn-default" href="{% url 'post_remove' pk=post.pk %}"><i class="fa fa-trash" style="font-size:1em;"></i></a>
+                    {% endif %}
+                    <a class="btn btn-default" href="{% url 'add_comment_to_post' pk=post.pk %}">Add comment</a>
                 {% endif %}
             </aside>
             {% if post.published_date %}

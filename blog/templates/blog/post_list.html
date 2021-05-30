@@ -19,7 +19,7 @@
             <!--{{posts}}-->
             <main class="container">
                 <div class="row">
-                    <div class="col">
+                    <div>
                         {% block content %}
                         {% for post in posts %}
                             <article class="post">
@@ -27,6 +27,7 @@
                                     {{ post.published_date }}
                                 </time>
                                 <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+                                <h5><a href="{% url 'post_detail' pk=post.pk %}">Author: {{ post.author }}</a></h5>
                                 <p>{{ post.text|linebreaksbr }}</p>
                                 <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.approved_comments.count }}</a>
                             </article>
