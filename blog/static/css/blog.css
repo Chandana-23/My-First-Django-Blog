@@ -1,0 +1,80 @@
+.page-header {
+    background-color: #f1356d;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header h1,
+.page-header h1 a,
+.page-header h1 a:visited,
+.page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Times New Roman', cursive;
+}
+
+.date {
+    color: #828282;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea,
+.post-form input {
+    width: 100%;
+}
+
+.top-menu,
+.top-menu:hover,
+.top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+
+.post{
+    margin-bottom: 70px;
+  }
+  
+.post:hover {
+    transform: scale(1.2);
+    transition: 2s;
+    box-shadow: 3px 5px 3px 0px gray;
+  }
+
+.post h2 a,
+.post h2 a:visited {
+    color: #000000;
+}
+
+.post > .date,
+.post > .actions {
+    float: right;
+}
+
+.btn-default,
+.btn-default:visited {
+    color: #f1356d;
+    background: none;
+    border-color: #f1356d;
+}
+
+.btn-default:hover {
+    color: #FFFFFF;
+    background-color: #f1356d;
+}
+.comment {
+    margin: 20px 0px 20px 20px;
+}
