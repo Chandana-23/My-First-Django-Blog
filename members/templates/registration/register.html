@@ -1,13 +1,13 @@
 {%block content%}
-<h1><a href="/">Back to blogs...</a></h1>
-<h1>Login here!</h1>
+<a href="/"><h1>Back to blogs...</h1></a>
+<h1>Register Yourself</h1>
 <br/><br/>
 
 <div class="form-group">
     <form method="POST">
         {% csrf_token %}
         {{form.as_p}}
-        <button class="btn btn-secondary">Login</button>
+        <button class="btn btn-secondary">Register</button>
     </form>
 </div>
 

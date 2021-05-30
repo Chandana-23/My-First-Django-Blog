@@ -39,8 +39,9 @@
                             <a class="btn btn-default" href="{% url 'comment_approve' pk=comment.pk %}"><i class="fa fa-check"></i></a>
                         {% endif %}
                     </div>
+                    <b>Comments</b><br/><br/>
                     <strong>{{ comment.author }}</strong>
-                    <p>{{ comment.text|linebreaks }}</p>
+                    <p><i>{{ comment.text|linebreaks }}</i></p>
                 </div>
                 {% endif %}
             {% empty %}
